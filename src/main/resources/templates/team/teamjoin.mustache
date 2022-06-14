@@ -1,0 +1,22 @@
+{{> /layout/header}}
+
+<div class="container mt-3">
+
+    <form action="/team-join" method="post">
+        <div class="input-group mb-3">
+            <label class="form-label p-2">야구장 이름 : </label>
+            <select class="form-select" id="conName" name="conName">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+
+            <label class="form-label p-2">팀 이름 : </label>
+            <input type="text" name="teamName" id="teamName" class="form-control" placeholder="선수 이름">
+            <button class="btn btn-outline-primary" type="submit">등록하기</button>
+        </div>
+
+
+    </form>
+</div>
+{{> /layout/footer}}

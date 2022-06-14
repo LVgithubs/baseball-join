@@ -1,0 +1,30 @@
+{{> /layout/header}}
+
+
+<div class="container-xl p-5 mt-3">
+    <table class="table table-hover">
+        <thead>
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>개장일</th>
+                <th>수정</th>
+                <th>삭제</th>
+            </tr>
+        </thead>
+        <tbody>
+            {{#con}}
+            <tr>
+                <td>{{id}}</td>
+                <td>{{conName}}</td>
+                <td>{{date}}</td>
+                <td>수정하기</td>
+                <td>삭제하기</td>
+            </tr>
+            {{/con}}
+        </tbody>
+    </table>
+</div>
+
+
+{{> /layout/footer}}
