@@ -1,21 +1,9 @@
 {{> /layout/header}}
 
 
-
-
-
-<div class="container-xl p-5 ">
-    <div class="p-5 mt-3 ">
-        <label class="form-label">포지션 </label>
-        <select class="form-select" id="position" name="position">
-            <option>내야수</option>
-            <option>외야수</option>
-            <option>타자</option>
-            <option>투수</option>
-        </select>
-    </div>
+<div class="container-xl p-5 mt-3">
         <div class="p-5 mt-3 ">
-        <label class="form-label"> </label>
+        <label class="form-label">포지션 </label>
         <select class="form-select" id="position" name="position">
             <option>내야수</option>
             <option>외야수</option>
@@ -27,26 +15,24 @@
         <thead>
             <tr>
                 <th>번호</th>
+                <th>경기장 이름</th>
                 <th>팀 이름</th>
-                <th>포지션</th>
-                <th>선수 이름</th>
-                <th>등록일</th>
+                <th>창단일</th>
                 <th>수정</th>
                 <th>삭제</th>
             </tr>
         </thead>
         <tbody>
-            {{#member}}
+            {{#team}}
             <tr>
                 <td>{{id}}</td>
+                <td>{{conName}}</td>
                 <td>{{teamName}}</td>
-                <td>{{position}}</td>
-                <td>{{memberName}}</td>
                 <td>{{date}}</td>
                 <td>수정하기</td>
                 <td>삭제하기</td>
             </tr>
-            {{/member}}
+            {{/team}}
         </tbody>
     </table>
 </div>

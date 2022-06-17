@@ -21,7 +21,7 @@ public class TeamController {
     public String memberList(Model model) {
         List<Teams> list = teamservice.팀전체보기();
         model.addAttribute("team", list);
-        return "/member/memberlist";
+        return "/team/teamlist";
     }
 
     @GetMapping({ "/team/join" })
